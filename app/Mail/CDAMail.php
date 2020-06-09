@@ -16,9 +16,9 @@ class CDAMail extends Mailable
      *
      * @return void
      */
-    public function __construct($details)
+    public function __construct()
     {
-        $this->details = $details;
+    
     }
 
     /**
@@ -28,6 +28,6 @@ class CDAMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('New Contact Request')->view('emails.CDAemail');
+        return $this->markdown('emails.CDAemail');
     }
 }

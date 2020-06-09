@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Message;
+use App\Contact;
+use App\Mail\CDAMail;
 use Illuminate\Support\Facades\Mail;
 
 require '/Users/vladyslava/cda/vendor/autoload.php';
@@ -19,25 +21,24 @@ class MessagesController extends Controller
 
     
         ]);
+
+
+
     
         $emailUser = $request->input('email');
         $messageUser = $request->input('message'); 
         $userName = $request->input('name');
         $subject = 'BeMo - new question from '.$userName;
 
-
-        /*
+/*
         Mail::raw($messageUser, function($message) use ($emailUser, $subject)
         {
             $message->subject($subject);
             $message->from($emailUser);
             $message->to('d.vladislawa@gmail.com');
         }); 
-        
-*/
-        Mail::to('sdiachenkovladyslava@gmail.com')->send(new \App\Mail\CDAMail($request));
-       
-        return redirect('/contact')->with('success', 'Message Sent');
+    */    
+        return redirect('/contact')->with('success', 'Email setup in progress:' . ' you have received an email from ' . $userName . ' with email address ' . $emailUser . ' and the message ' . $messageUser);
         
     } 
 
