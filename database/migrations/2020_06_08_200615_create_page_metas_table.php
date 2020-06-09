@@ -15,11 +15,11 @@ class CreatePageMetasTable extends Migration
     {
         Schema::create('page_metas', function (Blueprint $table) {
             $table->id();
-            $table->integer('author_id');
-            $table->string('page_name');
+            $table->integer('author_id')->default('1');
+            $table->string('page_name')->default('Home');
             $table->text('meta_title');
             $table->text('meta_description');
-            $table->boolean('index');
+            $table->boolean('index')->default('1');
             $table->timestamps();
         });
     }

@@ -15,7 +15,7 @@ class CreateApplicationsTable extends Migration
     {
         Schema::create('applications', function (Blueprint $table) {
             $table->id();
-            $table->integer('author_id');
+            $table->integer('author_id')->default('1');;
             $table->text('facebook_pix');
             $table->text('gooogle_analytics');
             $table->timestamps();
