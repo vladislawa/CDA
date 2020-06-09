@@ -1,0 +1,154 @@
+//bemo: #000066;
+//bemolink: #FF6600
+* {
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #373737;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+.home-bg {
+    background-image: url("/img/bg.jpg"); /* The image used */
+    height: 750px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+.home-text {
+    position: absolute;
+    top: 40%;
+}
+
+
+hr {
+    border: 1px solid white;
+   
+}
+
+.nav-bar {
+    background: rgba(255, 255, 255, 1);
+    transition: background 2.5s;
+}
+
+p {
+    font-weight: 100;
+}
+
+h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+h2, h3 {
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 17px;
+    color: #000066;
+}
+
+h3 {
+    font-size: 16px;
+    
+}
+
+h4 {
+    font-size: 20px;
+    margin: 0 0 25px 0; 
+}
+
+#footer {
+    margin-top: 70px;
+    color: white;
+    background-color: #000066;
+    padding: 30px 30px 15px 30px;
+    font-size: 12px;
+}
+
+nav {
+    letter-spacing: 1px;
+    font-size: 17px;
+
+}
+
+nav a:hover {
+    border-bottom: 1px solid #000066;
+    text-decoration: none;
+}
+
+nav a:active {
+    color: #000066;
+    border-bottom: 1px solid #000066;
+}
+
+a.disabled {
+    pointer-events: none;
+  }
+
+.scroll {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.container-fluid {
+    padding: 0 50px !important;
+}
+
+p a:link, p a:visited, p a:active {
+    color: #FF6600;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: rgb(156, 154, 153);
+}
+
+#contact {
+    color: #373737;
+}
+
+label {
+    font-size: 12px;
+}
+
+input, textarea {
+    background-color: #CCC !important;
+    border-radius: 0px !important;
+}
+
+textarea {
+    height: 170px !important;
+}
+
+
+.hide {
+    visibility: hidden;
+}
+
+.btn-grey {
+    background-color: rgb(149, 146, 146);
+    color: #000066;
+    font-size: 10px;
+    margin: 10px 15px;
+    padding: 10px 25px;
+    box-shadow: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+#footer a {
+    text-decoration: underline;
+}
+
+
+
+
