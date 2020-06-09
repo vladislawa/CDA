@@ -31,6 +31,6 @@ class ContactMetas extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('contact_metas');
     }
 }
