@@ -42298,8 +42298,15 @@ textarea {
   text-transform: uppercase;
 }
 
-#footer a {
+#footer {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  nav a {
+    display: block !important;
+    font-size: 12px !important;
+  }
 }
 
 /*!

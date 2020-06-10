@@ -7,7 +7,7 @@
         <div class="text-center">
         @foreach($contact as $data)
             @if ($data->contact_image) 
-                <img src="img/{{ $data->contact_image }}" alt="">
+                <img src="img/{{ $data->contact_image }}"  class="img-fluid"  alt="contact-image">
             @endif
         @endforeach
 

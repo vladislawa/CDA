@@ -66,9 +66,14 @@
                 $(window).scroll(function(){ 
                   $('.nav-bar').toggleClass('scroll', $(window).scrollTop() > $('.nav-bar').height());
                 }) 
-                
+	      
+             if ($(window).width() <= 900) { 
+                  $(".nav-bar").removeClass("fixed-top");
+                }			
 
-            }) 
+	    })
+
+	  
     </script> 
     <script src="backend/plugins/simplemde/simplemde.min.js"></script>
     </body>

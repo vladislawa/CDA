@@ -8,7 +8,6 @@ use App\Contact;
 use App\Mail\CDAMail;
 use Illuminate\Support\Facades\Mail;
 
-require '/Users/vladyslava/cda/vendor/autoload.php';
 
 class MessagesController extends Controller
 {
